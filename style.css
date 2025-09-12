@@ -1,111 +1,13 @@
-/* Reset basic styles */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and text */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
 }
 
-/* Header styles */
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    color: #333;
-}
-
-.header p {
-    font-size: 1.1em;
-    color: #666;
-}
-
-.header a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-/* Section titles */
-h2 {
-    font-size: 2em;
-    color: #2c3e50;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* Education section */
-.education ul {
-    list-style-type: none;
-    margin-left: 20px;
-}
-
-.education li {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Work Experience Section */
-.work-experience .job {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.job h3 {
-    color: #34495e;
-    font-size: 1.6em;
-    margin-bottom: 10px;
-}
-
-.job p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.job ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-size: 1.1em;
-}
-
-/* Skills Section */
-.skills ul {
-    list-style-type: none;
-    margin-left: 20px;
-}
-
-.skills li {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-    /* Sticky Navbar */
+/* Sticky Navbar */
 nav {
     position: sticky;
     top: 0;
@@ -142,27 +44,133 @@ html {
     scroll-behavior: smooth;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-section {
-    margin: 60px 0;
-}
-
-h1, h2 {
-    color: #2c3e50;
-}
-
+/* Header */
 header {
     text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+section li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Job Entries */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: #34495e;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.skills li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Download PDF Link */
+.resume-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.resume-link a:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
+    font-size: 1.1em;
+    color: #666;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .job h3 {
+        font-size: 1.4em;
+    }
+
+    .job p {
+        font-size: 1em;
+    }
+
+    .resume-link a {
+        font-size: 1em;
+    }
 }
