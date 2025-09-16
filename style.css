@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,7 +10,6 @@ body {
     background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Navigation Bar */
