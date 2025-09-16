@@ -106,19 +106,20 @@ header .contact-info a:hover {
 
 .resume-download-btn {
     display: inline-block;
-    padding: 14px 30px;
+    padding: 14px 40px; /* Increased padding for oval shape */
     background-color: #3498db;
     color: white;
     text-decoration: none;
     font-size: 1.3em;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50px; /* Makes the button oval */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, text-decoration 0.3s ease;
 }
 
 .resume-download-btn:hover {
     background-color: #2980b9;
     transform: scale(1.05); /* Slight scale effect on hover */
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
+    text-decoration: underline; /* Underline only on hover */
 }
 
 /* Section Styles */
