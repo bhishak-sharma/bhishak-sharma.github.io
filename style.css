@@ -29,6 +29,7 @@ nav .logo h1 {
     font-size: 1.8em;
     margin: 0;
     text-transform: uppercase;
+    text-decoration: none; 
 }
 
 nav .nav-links a {
