@@ -12,8 +12,9 @@ nav {
     position: sticky;
     top: 0;
     background-color: #007BFF;
-    padding: 10px;
+    padding: 15px;
     z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -49,11 +50,11 @@ header {
     text-align: center;
     background-color: #2c3e50;
     color: white;
-    padding: 20px;
+    padding: 30px;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -63,7 +64,7 @@ header p {
 
 /* Section Titles */
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #2c3e50;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -71,11 +72,11 @@ h2 {
 
 /* Section Styles */
 section {
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 section ul {
@@ -95,7 +96,7 @@ section li {
 
 .job h3 {
     color: #34495e;
-    font-size: 1.6em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
@@ -124,12 +125,12 @@ section li {
 /* Download PDF Link */
 .resume-link a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #3498db;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .resume-link a:hover {
@@ -140,8 +141,9 @@ section li {
 footer {
     text-align: center;
     margin-top: 40px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #666;
+    padding: 20px;
 }
 
 /* Mobile Responsiveness */
@@ -151,7 +153,7 @@ footer {
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     header p {
@@ -159,11 +161,11 @@ footer {
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
     .job h3 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     .job p {
@@ -171,6 +173,6 @@ footer {
     }
 
     .resume-link a {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
