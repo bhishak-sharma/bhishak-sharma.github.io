@@ -1,223 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bhishak Sharma's Résumé">
     <title>Bhishak Sharma's Résumé</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 5px solid #2980b9;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #34495e;
-            padding: 12px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 30px;
-            margin: 0 20px;
-            font-size: 1.1em;
-            text-transform: uppercase;
-            display: inline-block;
-            border-radius: 30px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #2980b9;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 40px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        section p {
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        section li {
-            margin: 15px 0;
-            font-size: 1.2em;
-            color: #555;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        section li:before {
-            content: '•';
-            color: #3498db;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        /* Job Entries */
-        .job h3 {
-            font-size: 1.8em;
-            color: #34495e;
-            margin-bottom: 10px;
-        }
-
-        .job p {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .job ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        /* Resume Download Section */
-        .resume-link a {
-            display: inline-block;
-            padding: 14px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            font-size: 1.3em;
-            border-radius: 30px;
-            margin-top: 30px;
-            transition: background-color 0.3s ease;
-        }
-
-        .resume-link a:hover {
-            background-color: #2980b9;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Non-Highlighted Email */
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 400;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            nav a {
-                font-size: 1em;
-                margin: 10px 5px;
-            }
-
-            section h2 {
-                font-size: 2em;
-            }
-
-            section li {
-                font-size: 1em;
-            }
-
-            .resume-link a {
-                font-size: 1.1em;
-                padding: 12px 25px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Name on the far left of the navbar -->
+        <div class="logo">
+            <h1>Bhishak Sharma</h1>
+        </div>
+        
+        <!-- Navigation Links on the right -->
+        <div class="nav-links">
+            <a href="#summary">Summary</a>
+            <a href="#education">Education</a>
+            <a href="#work-experience">Work Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume-link">Résumé</a>
+        </div>
+    </nav>
+
+    <!-- Header (Name and Contact Info) -->
     <header>
         <h1>Bhishak Sharma</h1>
         <p>Finance & Mathematics Student | Florida State University</p>
-        <p class="contact-info">Email: bhishak.sharma.edu@gmail.com | Phone: +1 813-442-0217 | </p>
-        <p><a href="https://www.linkedin.com/in/bhishak-sharma-484bba333" target="_blank">LinkedIn Profile</a></p>
-
+        <p class="contact-info">Email: bhishak.sharma.edu@gmail.com | Phone: +1 813-442-0217</p>
+        <!-- LinkedIn Profile Link -->
+        <p><a href="https://www.linkedin.com/in/bhishak-sharma-484bba333" target="_blank" class="linkedin-link">LinkedIn Profile</a></p>
     </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#summary">Summary</a>
-        <a href="#education">Education</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume-link">Résumé</a>
-    </nav>
 
     <!-- Summary Section -->
     <section id="summary">
@@ -300,9 +117,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>Feel free to reach out to me via email with any inquiries or opportunities.</p>
         <p>&copy; 2025 | bs24bj@fsu.edu</p>
-
     </footer>
 
 </body>
