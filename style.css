@@ -1,109 +1,119 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Sticky Navbar */
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #007BFF;
-    padding: 15px;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Header */
 header {
-    background-image: url('https://via.placeholder.com/1500x600');
-    background-size: cover;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background-position: center;
-}
-
-header .header-content {
-    max-width: 800px;
-    margin: 0 auto;
+    border-bottom: 5px solid #2980b9;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 3.5em;
     margin: 0;
+    text-transform: uppercase;
 }
 
 header p {
     font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 300;
 }
 
-/* Section Titles */
-h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-top: 30px;
-    margin-bottom: 15px;
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #34495e;
+    padding: 12px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 0 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Styles */
 section {
-    padding: 30px;
+    padding: 40px;
     margin: 20px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
 }
 
 section ul {
     list-style-type: none;
-    margin-left: 20px;
+    padding-left: 0;
 }
 
 section li {
-    font-size: 1.1em;
+    margin: 15px 0;
+    font-size: 1.2em;
     color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+section li:before {
+    content: '•';
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* Job Entries */
-.job {
-    margin-bottom: 30px;
-}
-
 .job h3 {
-    color: #34495e;
     font-size: 1.8em;
+    color: #34495e;
     margin-bottom: 10px;
 }
 
@@ -118,26 +128,17 @@ section li {
     margin-left: 20px;
 }
 
-/* Skills Section */
-.skills ul {
-    list-style-type: none;
-    margin-left: 20px;
-}
-
-.skills li {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Download PDF Link */
+/* Resume Download Section */
 .resume-link a {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 14px 30px;
     background-color: #3498db;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 1.3em;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .resume-link a:hover {
@@ -146,40 +147,53 @@ section li {
 
 /* Footer */
 footer {
+    background-color: #34495e;
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Non-Highlighted Email */
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* LinkedIn Link */
+footer a {
+    color: #3498db;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
     header h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
-    header p {
+    nav a {
         font-size: 1em;
+        margin: 10px 5px;
     }
 
-    h2 {
-        font-size: 1.8em;
+    section h2 {
+        font-size: 2em;
     }
 
-    .job h3 {
-        font-size: 1.5em;
-    }
-
-    .job p {
+    section li {
         font-size: 1em;
     }
 
     .resume-link a {
         font-size: 1.1em;
+        padding: 12px 25px;
     }
 }
