@@ -6,7 +6,7 @@ body {
     background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Navigation Bar */
@@ -42,7 +42,7 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     background-color: #2980b9;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
 }
 
 /* Header Section */
@@ -94,11 +94,12 @@ section {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); /* Added shadow effect */
 }
 
 section h2 {
@@ -106,7 +107,7 @@ section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-weight: bold; /* Bold section titles */
+    font-weight: bold;
 }
 
 section p {
@@ -164,12 +165,13 @@ section li:before {
     font-size: 1.3em;
     border-radius: 30px;
     margin-top: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resume-link a:hover {
     background-color: #2980b9;
     transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
 /* Footer Section */
