@@ -96,7 +96,7 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
