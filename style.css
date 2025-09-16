@@ -101,6 +101,7 @@ section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-weight: bold; /* Bold section headings */
 }
 
 section p {
@@ -111,6 +112,7 @@ section p {
 section ul {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 10px; /* Adds some space above the list */
 }
 
 section li {
