@@ -29,7 +29,7 @@ nav .logo h1 {
     font-size: 1.8em;
     margin: 0;
     text-transform: uppercase;
-    text-decoration: none; /* No underline */
+    text-decoration: none; /* No underline for initials */
 }
 
 nav .nav-links a {
@@ -99,8 +99,12 @@ header .contact-info a:hover {
     text-decoration: underline;
 }
 
-/* Resume Download Section */
-.resume-link a {
+/* Resume Download Button */
+.resume-button {
+    margin-top: 20px;
+}
+
+.resume-download-btn {
     display: inline-block;
     padding: 14px 30px;
     background-color: #3498db;
@@ -108,11 +112,10 @@ header .contact-info a:hover {
     text-decoration: none;
     font-size: 1.3em;
     border-radius: 30px;
-    margin-top: 30px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.resume-link a:hover {
+.resume-download-btn:hover {
     background-color: #2980b9;
     transform: scale(1.05); /* Slight scale effect on hover */
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
