@@ -14,7 +14,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #C7C7C7;
+    background-color: #7f8c8d; /* Medium grey */
     display: flex;
     justify-content: space-between; /* Aligns the name and links */
     align-items: center; /* Vertically centers the items */
@@ -29,7 +29,7 @@ nav .logo h1 {
     font-size: 1.8em;
     margin: 0;
     text-transform: uppercase;
-    text-decoration: none; 
+    text-decoration: none; /* No underline */
 }
 
 nav .nav-links a {
@@ -42,6 +42,13 @@ nav .nav-links a {
     display: inline-block;
     border-radius: 30px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Active Link Underline */
+nav .nav-links a:active,
+nav .nav-links a:focus {
+    text-decoration: underline;
+    background-color: #2980b9; /* Highlight background */
 }
 
 nav .nav-links a:hover {
