@@ -42,7 +42,7 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     background-color: #2980b9;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
 }
 
 /* Header Section */
@@ -52,7 +52,7 @@ header {
     padding: 80px 20px;
     text-align: center;
     border-bottom: 5px solid #2980b9;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 header h1 {
@@ -93,13 +93,13 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px); /* Subtle lift effect on hover */
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
 }
 
 section h2 {
@@ -171,7 +171,7 @@ section li:before {
 .resume-link a:hover {
     background-color: #2980b9;
     transform: scale(1.05); /* Slight scale effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
 }
 
 /* Footer Section */
