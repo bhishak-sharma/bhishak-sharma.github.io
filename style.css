@@ -14,7 +14,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #BDC3C7;
+    background-color: #AAB7B8;
     display: flex;
     justify-content: space-between; /* Aligns the name and links */
     align-items: center; /* Vertically centers the items */
