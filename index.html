@@ -6,37 +6,225 @@
     <meta name="description" content="Bhishak Sharma's Résumé">
     <title>Bhishak Sharma's Résumé</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2980b9;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #34495e;
+            padding: 12px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            margin: 0 20px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            display: inline-block;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section li {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #555;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        section li:before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Job Entries */
+        .job h3 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .job p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .job ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Resume Download Section */
+        .resume-link a {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 30px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-link a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Non-Highlighted Email */
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 10px 5px;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            section li {
+                font-size: 1em;
+            }
+
+            .resume-link a {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Sticky Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume-link">Résumé</a></li>
-        </ul>
-    </nav>
 
-    <!-- Content Sections -->
-    <header class="header" id="summary">
-        <div class="header-content">
-            <h1>Bhishak Sharma</h1>
-            <p>1242 Florablu Dr, Seffner, FL 33584</p>
-            <p>Email: <a href="mailto:bhishak.sharma.edu@gmail.com">bhishak.sharma.edu@gmail.com</a> | Phone: +1 813-442-0217</p>
-        </div>
+    <!-- Header -->
+    <header>
+        <h1>Bhishak Sharma</h1>
+        <p>Finance & Mathematics Student | Florida State University</p>
+        <p class="contact-info">Email: bhishak.sharma.edu@gmail.com | Phone: +1 813-442-0217</p>
     </header>
 
-    <section class="summary" id="summary">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume-link">Résumé</a>
+    </nav>
+
+    <!-- Summary Section -->
+    <section id="summary">
         <h2>Summary</h2>
         <p>
             Highly motivated and results-oriented finance and mathematics student at Florida State University with a passion for entrepreneurship, financial analysis, and strategic operations. Proven experience in leading initiatives, fundraising, and financial reporting. Demonstrated success in managing partnerships, cultivating relationships with venture capital firms, and organizing events to engage communities.
         </p>
     </section>
 
-    <section class="education" id="education">
+    <!-- Education Section -->
+    <section id="education">
         <h2>Education</h2>
         <p><strong>Florida State University</strong>, Tallahassee, FL <br> Honors, Finance & Mathematics (Expected May 2029)</p>
         <ul>
@@ -46,9 +234,11 @@
         </ul>
     </section>
 
-    <section class="work-experience" id="work-experience">
+    <!-- Work Experience Section -->
+    <section id="work-experience">
         <h2>Work & Leadership Experience</h2>
-        <!-- Job Entries -->
+
+        <!-- Job Entry 1: Mission Spire -->
         <div class="job">
             <h3>Mission Spire, Tampa, FL</h3>
             <p><strong>Co-Founder & Finance Director</strong> (04/2024 – Present)</p>
@@ -60,10 +250,10 @@
                 <li>Collaborated with a team to ensure business sustainability and operational excellence, allowing the organization to scale effectively.</li>
             </ul>
         </div>
-        <!-- Add more job entries as necessary -->
     </section>
 
-    <section class="skills" id="skills">
+    <!-- Skills Section -->
+    <section id="skills">
         <h2>Skills</h2>
         <h3>Languages</h3>
         <ul>
@@ -96,10 +286,12 @@
     </section>
 
     <!-- Resume Link Section -->
-    <section class="resume-link" id="resume-link">
+    <section id="resume-link">
         <h2>Résumé</h2>
         <p>Click below to download my résumé in PDF format:</p>
-        <a href="Bhishak_Sharma_Resume.pdf" download>Download PDF</a>
+        <div class="resume-link">
+            <a href="Bhishak_Sharma_Resume.pdf" download>Download PDF</a>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -107,6 +299,5 @@
         <p>Feel free to reach out to me via email with any inquiries or opportunities.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
