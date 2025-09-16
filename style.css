@@ -52,20 +52,21 @@ nav .nav-links a:hover {
 header {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
     border-bottom: 5px solid #2980b9;
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 header h1 {
+    font-family: 'Merriweather', serif;
     font-size: 3.5em;
     margin: 0;
     text-transform: uppercase;
 }
 
-header p {
-    font-size: 1.2em;
+header .header-info {
+    font-size: 1.3em;
     margin-top: 10px;
     font-weight: 300;
 }
@@ -88,6 +89,25 @@ header .contact-info a:hover {
 
 .linkedin-link:hover {
     text-decoration: underline;
+}
+
+/* Resume Download Section */
+.resume-link a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-link a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
 }
 
 /* Section Styles */
@@ -140,43 +160,6 @@ section li:before {
     top: 0;
 }
 
-/* Job Entries */
-.job h3 {
-    font-size: 1.8em;
-    color: #34495e;
-    margin-bottom: 10px;
-}
-
-.job p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.job ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Resume Download Section */
-.resume-link a {
-    display: inline-block;
-    padding: 14px 30px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-    border-radius: 30px;
-    margin-top: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.resume-link a:hover {
-    background-color: #2980b9;
-    transform: scale(1.05); /* Slight scale effect on hover */
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
-}
-
 /* Footer Section */
 footer {
     background-color: #34495e;
@@ -193,16 +176,6 @@ footer {
     color: #3498db;
     text-decoration: none;
     font-weight: 400;
-}
-
-/* LinkedIn Link in Header */
-header a {
-    color: #3498db;
-    font-weight: 600;
-}
-
-header a:hover {
-    text-decoration: underline;
 }
 
 /* Mobile Responsiveness */
